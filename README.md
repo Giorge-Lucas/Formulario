@@ -1,1 +1,3 @@
-# Formulario
+//Formulário genérico.
+
+//A simple form.
