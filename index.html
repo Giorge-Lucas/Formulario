@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet"  href="style.css">
+    <script src="function.js"></script>
+    
+</head>
+<body>
+    <div>
+        <h1>Cadastre-se</h1>
+        <p>Complete com suas informações</p>
+        <br>
+    </div>
+
+<form>
+
+    <fieldset>
+        <div>
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" class="input" id="nome" required>
+        </div>
+        <div>
+            <label for="sobrenome"><strong>Sobrenome:</strong></label>
+            <input type="text" class="input" id="sobrenome" required>
+        </div>
+    </fieldset> <br>
+    
+ <div>
+    <label for="email"><strong>Email:</strong></label>
+    <input type="email" id="email" required class="input">
+ </div> <br>
+
+ <div>
+    <label for="genero"><strong>Gênero:</strong></label>
+    <label>
+        <input type="radio" name="genero" value="masculino">Masculino
+    </label>
+    <label>
+     <input type="radio" name="genero" value="masculino">Feminino
+    </label>
+    <label>
+      <input type="radio" name="genero" value="outro">Outro
+    </label>
+ </div> <br>
+ 
+
+ <div>
+    <label><strong>Selecione seu estado:</strong></label>
+ <select>
+    <option selected disabled value="">Selecione</option>
+    <option>Acre</option>
+    <option>Alagoas</option>
+    <option>Amapá</option>
+    <option>Amazonas</option>
+    <option>Bahia</option>
+    <option>Ceará</option>
+    <option>Espirito Santo</option>
+    <option>Goiás</option>
+    <option>Maranhão</option>
+    <option>Mato Grosso</option>
+    <option>Mato Grosso do Sul</option>
+    <option>Minas Gerais</option>
+    <option>Pará</option>
+    <option>Paraíba</option>
+    <option>Paraná</option>
+    <option>Pernambuco</option>
+    <option>Piauí</option>
+    <option>Rio de Janeiro</option>
+    <option>Rio Grande do norte</option>
+    <option>Rio Grande do Sul</option>
+    <option>Rondônia</option>
+    <option>Roraima</option>
+    <option>Santa Catarina </option>
+    <option>São Paulo</option>
+    <option>Sergipe</option>
+    <option>Tocantins</option>
+    
+ </select>
+</div> <br>
+
+<div>
+    <label><strong>Fale um pouco sobre você:</strong></label><br><br>
+    <textarea row="6" style="width:26em"  id="comentario" ></textarea>
+</div> <br>
+
+<button class="btn" type="submit" onclick="enviar()"><strong>Concluído</strong></button>
+
+<h2 id="concluido"></h2>
+
+</form><br>
+
+<h2 id="enviado"></h2>
+
+</body>
+</html>
